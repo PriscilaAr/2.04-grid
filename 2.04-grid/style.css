@@ -1,0 +1,94 @@
+body{
+    margin: 0%;
+    display: grid;
+    grid-template-areas:'header header header header header'
+                        'navbar navbar navbar navbar navbar'
+                        'section section section section aside'
+                        'footer footer footer footer footer';
+    grid-template-rows: 40vh 10vh 60vh 20vh;
+    grid-gap: 15px;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(41, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    border-radius: 100%;
+}
+
+nav{
+    grid-area: navbar;
+    background-color: rgb(235, 148, 148);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a:{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 30pt;
+    color: black;
+}
+
+section{
+    grid-area: section;
+    background-color: rgb(154, 231, 154);
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(236, 236, 116);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside button{
+    margin-top: 20px;
+    border: none;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+aside input{
+    border: none;
+    width: 300px;
+    height: 30px;
+    border-bottom: 3px red solid;
+    background-color: transparent;
+    color: red;
+}
+
+aside input:nth-child(3){
+    margin-top: 10px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(41, 29, 29);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside input::placeholder{
+    color: red;
+}
+
+footer div{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
