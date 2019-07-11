@@ -1,0 +1,23 @@
+body{
+    background-image: url(supergirafa.jpg);
+    background-size: 100%;
+}
+h1{
+    color: rgb(173, 53, 10);
+    font-size: 80pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+span{
+    color: rgb(65, 3, 3);
+}
+img{
+    width: 600px;
+    height: 400px;
+}
+button{
+    color: black;
+    width: 100pt;
+    height: 25pt;
+    border-bottom-color: black;
+    background-color: rgb(221, 221, 84);
+}
